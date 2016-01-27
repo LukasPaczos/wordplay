@@ -1,0 +1,4 @@
+easy: 7
+medium: 0
+hard: 0
+extreme: 1

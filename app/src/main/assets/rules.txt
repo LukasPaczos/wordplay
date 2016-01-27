@@ -1,0 +1,1 @@
+Your are presented with a set of words, which differ in quantity and number of letters in each word (depending on difficulty). Your task is to guess the word from this set, which computer randomly chose as "the right one". You have 4 chances and each time you guess, you will be presented with letters from your word which are on the same position as in "the right word". Good luck!

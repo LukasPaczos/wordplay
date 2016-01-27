@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Mastermind</string>
+    <string name="action_play">New Game</string>
+    <string name="action_rules">Rules</string>
+    <string name="action_stats">Trophies</string>
+    <string name="your_words">Which one is correct?</string>
+    <string name="button_easy">EASY</string>
+    <string name="button_medium">MEDIUM</string>
+    <string name="button_hard">HARD</string>
+    <string name="button_extreme">EXTREME</string>
+    <string name="insert_answer">insert answer...</string>
+    <string name="heart_filled_description">filled hearth</string>
+    <string name="right_answer">RIGHT! You WON!</string>
+    <string name="wrong_answer">WRONG!</string>
+    <string name="wrong_number_of_letters">Wrong word length.</string>
+    <string name="try_button">TRY</string>
+    <string name="popup_button">OK</string>
+    <string name="you_won">You WON! Congrats!</string>
+    <string name="you_lost">You LOST! Sorry :-(</string>
+    <string name="title_activity_rules">Rules</string>
+    <string name="rules">
+        Your are presented with a set of words,
+        which differ in quantity and number of letters in each word (depending on difficulty).
+        Your task is to guess the word from this set, which computer randomly chose as \"the correct one\".
+        You have 4 chances and each time you guess,
+        you will be shown the letters from your word which are on the same position as in \"the correct word\".
+        Good luck!\n\n"
+    </string>
+    <string name="stopka">Created by Lukas Paczos ©</string>
+    <string name="title_activity_trophies">Trophies</string>
+    <string name="title_activity_newMastermind">Mastermind</string>
+    <string name="stats_title">STATS</string>
+    <string name="button_reset_stats">RESET STATS</string>
+    <string name="title_activity_main">Wordplay</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_new_game">NewGame</string>
+    <string name="button_newMastermind">Mastermind</string>
+    <string name="button_newCross">Cross Words</string>
+    <string name="title_activity_new_cross">Cross Words</string>
+    <string name="title_activity_game_panel_cross">Cross Words</string>
+</resources>

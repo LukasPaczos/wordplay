@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPlay">#448F30</color>
+    <color name="colorRules">#3F51B5</color>
+    <color name="colorStats">#882D60</color>
+    <color name="turkus">#7DD3F5</color>
+    <color name="jasny_turkus">#27F5D3</color>
+    <color name="jasny_fiolet">#9D47ED</color>
+    <color name="zolty">#EDED47</color>
+    <color name="czerowny">#ED4A47</color>
+    <color name="zielony">#63D145</color>
+    <color name="zywy_zielony">#33EB00</color>
+    <color name="ciemny_szary">#232423</color>
+    <color name="bialy">#FFFFFF</color>
+    <color name="serce_pelne">#9719FF</color>
+    <color name="serce_puste">#F3E5FF</color>
+    <color name="words">#992097</color>
+
+</resources>

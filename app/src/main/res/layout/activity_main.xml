@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_background"
+    tools:context=".Main">
+
+    <View android:id="@+id/fakeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/action_play"
+        android:textColor="@color/bialy"
+        android:textSize="40sp"
+        android:background="@color/turkus"
+        android:layout_alignParentStart="true"
+        style="?android:attr/buttonBarButtonStyle"
+        android:onClick="newGameButton"
+        />
+
+    <Button
+        android:id="@+id/rules_button"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/action_rules"
+        android:textColor="@color/bialy"
+        android:textSize="40sp"
+        android:background="@color/serce_pelne"
+        android:layout_below="@id/play_button"
+        android:layout_toLeftOf="@+id/fakeView"
+        style="?android:attr/buttonBarButtonStyle"
+        android:onClick="rulesButton"
+        />
+
+    <Button
+        android:id="@+id/stats_button"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/action_stats"
+        android:textColor="@color/bialy"
+        android:textSize="40sp"
+        android:background="@color/czerowny"
+        android:layout_below="@id/play_button"
+        android:layout_toRightOf="@id/fakeView"
+        style="?android:attr/buttonBarButtonStyle"
+        android:onClick="trophiesButton"
+        />
+
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stats_button"
+        android:padding="35dp"
+        android:src="@drawable/main_logo"/>
+
+    <TextView
+        android:id="@+id/rules_text"
+        android:layout_below="@id/stats_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:padding="2dp"
+        android:text="@string/rules"
+        android:textSize="30sp"
+        android:textColor="@color/ciemny_szary"
+        android:textAlignment="center"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:fadeScrollbars="true"
+        android:fadingEdge="vertical"
+        android:isScrollContainer="false"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/stats_text"
+        android:layout_below="@id/stats_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/stopka"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/stopka"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

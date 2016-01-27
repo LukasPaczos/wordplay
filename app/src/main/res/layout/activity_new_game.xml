@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_background"
+    tools:context=".NewGame">
+
+    <Button
+        android:id="@+id/button_newMastermin"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/bialy"
+        android:textSize="40sp"
+        android:background="@color/turkus"
+        android:layout_alignParentStart="true"
+        android:text="@string/button_newMastermind"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/button_newCross"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/bialy"
+        android:textSize="40sp"
+        android:background="@color/zielony"
+        android:layout_below="@+id/button_newMastermin"
+        android:text="@string/button_newCross"
+        android:onClick="onClick"
+        />
+
+    <!--<Button
+        android:id="@+id/hard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/bialy"
+        android:textSize="40sp"
+        android:background="@color/czerowny"
+        android:layout_below="@+id/medium"
+        android:text="@string/button_hard"
+        android:onClick="onClick"
+        />-->
+
+</RelativeLayout>
