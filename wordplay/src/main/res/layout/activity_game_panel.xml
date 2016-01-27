@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/game_background"
+        tools:context="com.paczos.wordplay.GamePanel"
+        >
+
+        <TextView
+            android:id="@+id/game_panel_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/your_words"
+            android:textAlignment="center"
+            android:textColor="@color/ciemny_szary"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            />
+
+        <ScrollView
+            android:id="@+id/words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/words_border"
+            android:isScrollContainer="false"
+            android:layout_below="@id/game_panel_text">
+            <TextView
+                android:id="@+id/words_inside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/words"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                />
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/hearts"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/words"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/hearth1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/red_heart_filled"
+                android:contentDescription="@string/heart_filled_description"
+                />
+
+            <ImageView
+                android:id="@+id/hearth2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/red_heart_filled"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/heart_filled_description"
+                />
+
+            <ImageView
+                android:id="@+id/hearth3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/red_heart_filled"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/heart_filled_description"
+                />
+
+            <ImageView
+                android:id="@+id/hearth4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/red_heart_filled"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/heart_filled_description"
+                />
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:id="@+id/wrong"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/hearts"
+            android:text="WRONG!"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textAlignment="center"/>-->
+
+        <LinearLayout
+            android:id="@+id/hint"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/hearts"
+            android:gravity="center">
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/insert_answer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/hint"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="30sp"
+            android:textColor="@color/czerowny"
+            android:textAlignment="center"
+            android:hint="@string/insert_answer"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:backgroundTint="@color/zywy_zielony"/>
+
+        <Button
+            android:id="@+id/button_answer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/insert_answer"
+            android:background="@color/turkus"
+            android:text="@string/try_button"
+            android:textSize="30sp"
+            android:textColor="@color/bialy"
+            android:onClick="checkAnswer"/>
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/button_answer"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/info_box"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/game_panel_text"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="25sp"
+            android:textColor="@color/bialy"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:background="@color/czerowny"
+            />
+
+        <LinearLayout
+            android:id="@+id/popup_box"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/zielony"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/popup_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bialy"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                />
+
+            <Button
+                android:id="@+id/popup_button"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ok_button_bg"
+                android:text="@string/popup_button"
+                android:textSize="30sp"
+                android:textColor="@color/bialy"
+                android:layout_gravity="center"
+                android:onClick="endGame"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
