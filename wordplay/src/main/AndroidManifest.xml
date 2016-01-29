@@ -64,7 +64,7 @@
             android:name="com.paczos.wordplay.GamePanelCross"
             android:label="@string/title_activity_game_panel_cross"
             android:parentActivityName="com.paczos.wordplay.NewCross"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.paczos.wordplay.NewCross" />
